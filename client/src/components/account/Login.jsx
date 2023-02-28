@@ -65,6 +65,7 @@ const Login=()=>{
             <Box>
                 <Image src={imageURL} alt="login" />   
                 {
+                    //coonditional if condition to render different wrapper content
                     account === 'login' ?
                         <Wrapper>
                             <TextField variant='standard' label="Enter Username"/>
