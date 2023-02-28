@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gopal2804/SPE_Mtech_Project_BlogApplication.git"
+  },
+  "author": "gopal gupta and rahul tejpal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gopal2804/SPE_Mtech_Project_BlogApplication/issues"
+  },
+  "homepage": "https://github.com/gopal2804/SPE_Mtech_Project_BlogApplication#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
