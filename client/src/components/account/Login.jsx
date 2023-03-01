@@ -1,9 +1,12 @@
 import { useState } from 'react';
+
 //Box like a div in html
 //TextField like html input tag
 //Typography replacement for <p>
 import { Box, TextField , Button , styled , Typography} from '@mui/material';
 
+
+//styling the tags 
 const Component=styled(Box)`
     width: 400px;
     margin: auto;
