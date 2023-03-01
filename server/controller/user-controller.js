@@ -1,11 +1,19 @@
 //will contain all the user api
 
+//npm i bcrypt , used to enrypt the password before storing 
+import bcrypt from 'bcrypt';
+
+
 import User from "../model/user.js";
 //request will contain all the info entered by user in front-end
 //response is used to send the info from backend to frontend
 export const signupUser= async (request,response)=>{
     try{
-        const user=request.body;
+
+        const salt= await bcrypt.genSalt();
+        const hashedPassword= await bcrypt.hash(request.body.password,salt);
+
+        const user={username : request.body.username , name: request.body.name , password: hashedPassword }
 
         //used to validate the info coming from the front-end
         const newUser=new User(user);
